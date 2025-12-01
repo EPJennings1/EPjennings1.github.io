@@ -1,0 +1,194 @@
+h1{
+    text-align: center;
+}
+
+#MainNav {
+    text-align: center;
+    list-style: none;
+}
+
+#MainNav li {
+
+    display:inline-flex;
+    padding: .5em;
+    color:rgb(255, 255, 255);
+    border: .1em ridge rgb(0, 0, 0);
+}
+
+nav li:hover {
+    background-color: rgb(255, 0, 0);
+    transition: 1s;
+}
+
+/*.SideBanner {
+    position:fixed;
+    bottom:25%;
+    width: 50%;
+    margin: 0%;
+}
+
+#VS {
+    position:fixed;
+    bottom:25%;
+    left: 81%;
+    width:50%;
+    margin:0%;
+}*/
+
+#History{
+    margin-left:15em;
+    margin-right: 13em;
+    margin-bottom: 5%;
+}
+
+#TOCH{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#TOC{
+
+    position:fixed;
+    top:25%;
+    bottom:25%;
+    left:80%;
+    margin-right: 1em;
+    text-decoration: none;
+
+
+}
+
+
+#TOC li {
+
+    display:flexbox;
+    padding: .5em;
+    color:rgb(255, 255, 255);
+    border: .1em solid rgb(255, 0, 0);
+    text-align: center;
+    text-decoration: none;
+}
+
+#TOC ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    outline: none;
+}
+a:focus {
+    outline: none;
+}
+
+article{
+    background-color: white;
+    color: black;
+}
+
+.accordion {
+    margin: 60px auto;
+    align-self: auto;
+    width: 40em;
+    position: relative;
+    right:1em;
+
+}
+
+.accordion li {
+    list-style: none;
+    width:100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-align: center;
+    font-size: x-large;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+}
+
+label::before{
+    content:"+";
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.accordion .content{
+    color: black;
+    max-height: 0;
+    overflow: auto;
+    transition: max-height 0.5s padding 0.5s;
+
+}
+
+
+.accordion input[type="checkbox"]:checked + label + .content{
+    padding: 10px 10px 20px;
+    max-height: 200px;
+}
+
+.accordion input[type="checkbox"]:checked + label::before{
+    content: '-';
+}
+
+.fighterlist li{
+    text-align: center;
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
+}
+
+.gridlist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5em 1em;
+    padding-left: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.SideBanner, #VS {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: auto;
+}
+
+.SideBanner {
+    left: 0;
+}
+
+#VS {
+    right: 0;
+}
+
+.SideBanner img,
+#VS img {
+    height: 100%;
+    width: auto;
+    display: block;
+}
